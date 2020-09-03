@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using CalculatorSalarii.Data;
 using CalculatorSalarii.Models;
+using Microsoft.AspNetCore.Authorization;
 
-namespace CalculatorSalarii
+namespace CalculatorSalarii.Controllers
 {
+    [Authorize]
     public class AngajatiController : Controller
     {
         private readonly CalculatorSalariiContext _context;

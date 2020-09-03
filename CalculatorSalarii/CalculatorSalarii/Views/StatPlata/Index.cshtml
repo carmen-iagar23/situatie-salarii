@@ -1,0 +1,97 @@
+﻿@model IEnumerable<CalculatorSalarii.Models.StatPlata>
+
+@inject IEnumerable<CalculatorSalarii.Data.CalculatorSalariiContext> Context;
+
+@{
+    ViewData["Title"] = "Stat de plata";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Stat de plata</h1>
+
+<table class="table table-striped">
+    <thead class="bg-primary text-light">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Angajat.Nume) @Html.DisplayNameFor(model => model.Angajat.Prenume)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Angajat.VenitBrut)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContributieCAS)
+                <br />(25%)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ContributieCASS)
+                <br />(10%)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeducerePersonala)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SumaImpozit)
+                <br />(10%)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SalariuNet)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+        <tr>
+            <td class="font-weight-bold">
+                @Html.DisplayFor(modelItem => item.Angajat.Nume) @Html.DisplayFor(modelItem => item.Angajat.Prenume)
+            </td>
+            <td class="font-weight-bold">
+                @Html.DisplayFor(modelItem => item.Angajat.VenitBrut)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContributieCAS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContributieCASS)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeducerePersonala)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SumaImpozit)
+            </td>
+            <td class="font-weight-bold">
+                @Html.DisplayFor(modelItem => item.SalariuNet)
+            </td>
+        </tr>
+    }
+    </tbody>
+    <tfoot class="bg-primary text-light font-weight-bold">
+        <tr>
+            <td>
+                TOTAL
+            </td>
+            <td>
+                @Model.Sum(m => m.Angajat.VenitBrut)
+            </td>
+            <td>
+                @Model.Sum(m => m.ContributieCAS)
+            </td>
+            <td>
+                @Model.Sum(m => m.ContributieCASS)
+            </td>
+            <td>
+            </td>
+            <td>
+                @Model.Sum(m => m.SumaImpozit)
+            </td>
+            <td>
+                @Model.Sum(m => m.SalariuNet)
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+<hr />
+<h4>Contributia CAM (2.25%): @Model.Sum(m => m.SumaCAM) Lei</h4>
+<hr />
+<h5>Total cheltuieli firma: @Model.Sum(m => (m.Angajat.VenitBrut + m.SumaCAM)) Lei</h5>

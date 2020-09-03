@@ -1,0 +1,55 @@
+﻿@model IEnumerable<CalculatorSalarii.Models.ParametriLunari>
+ 
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+@if (!(Model.Count() > 0))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcentCAS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcentCASS)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcentImpozit)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProcentCAM)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcentCAS)%
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcentCASS)%
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcentImpozit)%
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProcentCAM)%
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

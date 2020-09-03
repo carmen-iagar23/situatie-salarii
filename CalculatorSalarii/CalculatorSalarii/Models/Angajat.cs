@@ -22,15 +22,18 @@ namespace CalculatorSalarii.Models
         
         [Required]
         [DisplayName("Venit brut")]
-        [DataType(DataType.Currency)]
-        public decimal VenitBrut { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage ="Venitul trebuie sa aiba o valoare mai mare ca 0.")]
+        public int VenitBrut { get; set; }
 
         [Required]
         [DisplayName("Serviciu de baza")]
-        public bool IsServiciuDeBaza { get; set; } = true;
+        [DefaultValue(true)]
+        public bool IsServiciuDeBaza { get; set; }
 
         [Required]
         [DisplayName("Persoane in intretinere")]
-        public int NrPersoaneInIntretinere { get; set; } = 0;
+        [DefaultValue(0)]
+        [Range(0, int.MaxValue, ErrorMessage = "Numarul de persoane in intretinere trebuie sa fie mai mare sau egal cu 0.")]
+        public int NrPersoaneInIntretinere { get; set; }
     }
 }

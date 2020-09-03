@@ -1,0 +1,49 @@
+﻿@model CalculatorSalarii.Models.ParametriLunari
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>ParametriLunari</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProcentCAS" class="control-label"></label>
+                <input asp-for="ProcentCAS" class="form-control" />
+                <span asp-validation-for="ProcentCAS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProcentCASS" class="control-label"></label>
+                <input asp-for="ProcentCASS" class="form-control" />
+                <span asp-validation-for="ProcentCASS" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProcentImpozit" class="control-label"></label>
+                <input asp-for="ProcentImpozit" class="form-control" />
+                <span asp-validation-for="ProcentImpozit" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ProcentCAM" class="control-label"></label>
+                <input asp-for="ProcentCAM" class="form-control" />
+                <span asp-validation-for="ProcentCAM" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

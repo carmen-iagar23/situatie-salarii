@@ -15,5 +15,9 @@ namespace CalculatorSalarii.Data
         }
 
         public DbSet<CalculatorSalarii.Models.Angajat> Angajat { get; set; }
+
+        public DbSet<CalculatorSalarii.Models.ParametriLunari> ParametriLunari { get; set; }
+
+        public DbSet<CalculatorSalarii.Models.StatPlata> StatPlata { get; set; }
     }
 }

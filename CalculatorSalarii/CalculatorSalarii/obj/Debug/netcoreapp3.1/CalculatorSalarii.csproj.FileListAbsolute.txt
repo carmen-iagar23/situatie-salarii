@@ -190,3 +190,13 @@ C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\Cal
 C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\Angajati\Details.cshtml.g.cs
 C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\Angajati\Edit.cshtml.g.cs
 C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\Angajati\Index.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\ParametriLunari\Create.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\ParametriLunari\Edit.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\ParametriLunari\Index.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Views\StatPlata\Index.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Anca\source\repos\carmen-iagar23\situatie-salarii\CalculatorSalarii\CalculatorSalarii\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
